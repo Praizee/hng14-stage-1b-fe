@@ -3,7 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main class="page" data-testid="test-page">
+      <article class="profile-card" data-testid="test-profile-card">
+        <header class="card-header" data-testid="test-card-header">
+          <h1 class="card-title" data-testid="test-user-name">
+            Stephen Adeniji
+          </h1>
+          <p class="card-bio" data-testid="test-user-bio">
+            Frontend engineer who builds tactile, accessible interfaces. I love
+            pairing poetic typography with resilient layouts and a dash of
+            playful motion.
+          </p>
+          <p class="card-time" data-testid="test-user-time-wrap">
+            Current time (ms):
+            <span aria-live="polite" data-testid="test-user-time">0</span>
+          </p>
+        </header>
+
+        <div class="card-grid" data-testid="test-card-grid">
+          <figure class="avatar" data-testid="test-avatar-figure">
+            <img
+              src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&fit=crop&w=400&q=80"
+              alt="Portrait of Stephen smiling in natural light? (nahh 😂)"
+              data-testid="test-user-avatar"
+            />
+            <figcaption
+              class="avatar-caption"
+              data-testid="test-avatar-caption"
+            >
+              Lagos, Nigeria — building for human moments.
+            </figcaption>
+          </figure>
+
+          <div class="card-content" data-testid="test-card-content">
+            <section class="section" data-testid="test-social-section">
+              <h2 class="section-title" data-testid="test-social-title">
+                Social Links
+              </h2>
+              <nav data-testid="test-user-social-links">
+                <ul class="link-list" data-testid="test-social-list">
+                  <li data-testid="test-social-item-twitter">
+                    <a
+                      href="https://x.com/intent/follow?screen_name=steevenadeniji"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-testid="test-user-social-twitter"
+                    >
+                      Twitter
+                    </a>
+                  </li>
+                  <li data-testid="test-social-item-github">
+                    <a
+                      href="https://github.com/Praizee"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-testid="test-user-social-github"
+                    >
+                      GitHub
+                    </a>
+                  </li>
+                  <li data-testid="test-social-item-linkedin">
+                    <a
+                      href="https://www.linkedin.com/in/stephen-adeniji/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-testid="test-user-social-linkedin"
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+
+            <section class="section" data-testid="test-hobbies-section">
+              <h2 class="section-title" data-testid="test-hobbies-title">
+                Hobbies
+              </h2>
+              <ul class="tag-list" data-testid="test-user-hobbies">
+                <li class="tag" data-testid="test-hobby-ux-sketching">
+                  UI explorations
+                </li>
+                <li class="tag" data-testid="test-hobby-gelato">
+                  Street photography
+                </li>
+                <li class="tag" data-testid="test-hobby-afrobeats">
+                  Good music
+                </li>
+                <li class="tag" data-testid="test-hobby-sunrise">Gaming</li>
+              </ul>
+            </section>
+
+            <section class="section" data-testid="test-dislikes-section">
+              <h2 class="section-title" data-testid="test-dislikes-title">
+                Dislikes
+              </h2>
+              <ul class="tag-list" data-testid="test-user-dislikes">
+                <li class="tag" data-testid="test-dislike-popups">
+                  Slow internet
+                </li>
+                <li class="tag" data-testid="test-dislike-low-contrast">
+                  'Bad' UI
+                </li>
+                <li class="tag" data-testid="test-dislike-lag">
+                  Unclear error messages
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
+
