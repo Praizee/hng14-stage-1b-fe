@@ -4,7 +4,7 @@ Profile card built with semantic HTML, modern CSS, and vanilla JavaScript for th
 
 ## Live demo
 
-- Live URL: <DEPLOYMENT_URL>
+- Live URL: <https://praizee.github.io/hng14-stage-1b-fe/>
 
 ## Repository
 
